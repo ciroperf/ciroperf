@@ -15,9 +15,7 @@ Welcome to my GitHub profile! Below is a list of software technologies and tools
 - **HTML5/CSS**  
 - **JavaScript (ES6+)**  
 - **React.js**  
-- **Vue.js**  
-- **Angular**  
-- **SASS/SCSS**  
+- **Angular**    
 - **Bootstrap**  
 
 ### Backend
@@ -43,7 +41,6 @@ Welcome to my GitHub profile! Below is a list of software technologies and tools
 - **Docker**  
 - **Kubernetes**  
 - **AWS (Amazon Web Services)**  
-- **Google Cloud**  
 - **Microsoft Azure**  
 - **CI/CD (Jenkins, GitLab CI, GitHub Actions)**  
 - **Terraform**  
@@ -69,14 +66,10 @@ Welcome to my GitHub profile! Below is a list of software technologies and tools
 - **Microsoft Word**  
 - **Microsoft Excel**  
 - **Microsoft PowerPoint**  
-- **Nginx**  
-- **Apache**  
-- **GraphQL**  
 - **WebSockets**  
 
 ## Operating Systems
-- **Linux (Ubuntu, Debian, CentOS)**  
-- **macOS**  
+- **Linux (Ubuntu)**  
 - **Windows**  
 
 ## Soft Skills
@@ -85,7 +78,6 @@ Welcome to my GitHub profile! Below is a list of software technologies and tools
 - **Time Management**  
 - **Adaptability**  
 - **Effective Communication**  
-- **Project Management**  
 
 Feel free to explore my projects and contributions. If you'd like to collaborate or have any questions, feel free to reach out!
 
