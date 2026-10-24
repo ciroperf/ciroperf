@@ -23,6 +23,44 @@ automate document checks, running on Azure with Docker, Kubernetes and CI/CD pip
 I care about taking things past the prototype: tests, traceability, and code that someone else
 can pick up and maintain.
 
+On the side I build open-source **Agent Skills** for Claude Code and Codex, and I back their
+claims with benchmarks and evals in the repo, not with adjectives.
+
+---
+
+## Open-source Agent Skills
+
+Skills for coding agents (Claude Code, Codex, and any agent that reads `SKILL.md`), installable in one line.
+
+### 📏 [right-size](https://github.com/ciroperf/right-size) · [![stars](https://img.shields.io/github/stars/ciroperf/right-size?style=flat-square)](https://github.com/ciroperf/right-size/stargazers) [![release](https://img.shields.io/github/v/release/ciroperf/right-size?style=flat-square)](https://github.com/ciroperf/right-size/releases/latest)
+
+Gives every coding task the compute it deserves: which model and reasoning effort to start on,
+when to step up, and when a subagent is actually worth it.
+
+- **Router** that starts a session on the cheapest tier that fits, checks every attempt (diff, tests, review one tier up) and escalates only on evidence
+- **Audit** of where your Claude Code spend went, from local transcripts, with no model calls
+- **Benchmarked** on real bug fixes scored by their own tests: maximum effort cost 3.9× for the same 10/10 solved; a Sonnet session solved 6/6 for 60% less than the Opus default. Regressions are published too
+
+```bash
+npx skills@latest add ciroperf/right-size
+```
+
+### 🧩 [patternwise](https://github.com/ciroperf/patternwise) · [![stars](https://img.shields.io/github/stars/ciroperf/patternwise?style=flat-square)](https://github.com/ciroperf/patternwise/stargazers) [![release](https://img.shields.io/github/v/release/ciroperf/patternwise?style=flat-square)](https://github.com/ciroperf/patternwise/releases/latest)
+
+Design patterns and refactoring, only where they pay off. Finds code smells, gives every
+existing pattern a verdict (sound, misapplied, name only, over-engineered) and refactors in
+small tested steps, only after you approve the plan.
+
+- Every finding with `file:line`, severity weighted by git churn, and a named technique from 66 refactorings
+- Never edits without an approved plan; runs your tests after every step
+- Evals with answer keys and a citation checker: 0 invented files across 168 citations on axios, httpie and Django
+
+```bash
+npx skills@latest add ciroperf/patternwise
+```
+
+`Agent Skills` `Claude Code` `Codex` `Python` `GitHub Actions`
+
 ---
 
 ## Featured projects
@@ -70,7 +108,7 @@ pull request with the new portfolio entry, and it goes live only after I merge i
 
 **Backend & APIs** · FastAPI, Flask, .NET, Node.js, Express, REST, microservices, event-driven architecture
 
-**AI / GenAI** · Azure OpenAI, Azure AI Foundry, LangChain, AI agents, prompt engineering, LLM evaluation, Claude Code, GitHub Copilot
+**AI / GenAI** · Azure OpenAI, Azure AI Foundry, LangChain, AI agents, Agent Skills, prompt engineering, LLM evaluation, Claude Code, Codex, GitHub Copilot
 
 **Cloud & DevOps** · Microsoft Azure, AKS / Kubernetes, Docker, Azure DevOps, GitHub Actions, CI/CD
 
